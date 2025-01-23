@@ -1,0 +1,9 @@
+# Dependencies
+node_modules/
+
+# Logs
+backend.log
+mydb.db
+patient_log.txt
+
+# other log, env, build, and OS-specific files may also be needed
