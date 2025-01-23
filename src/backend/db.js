@@ -181,27 +181,25 @@ const updateUserSecurityQuestions = (userId, securityQuestionsAndAnswers, callba
 };
 
 // creates test users upon build
-// db.get('SELECT email FROM users WHERE email = "admin@test.com"', (err) => {
-//     if (err) {
-//         db.run(`INSERT INTO users (account_type, first_name, last_name, email, password)
-//             VALUES('admin', 'admin', 'test', 'admin@test.com', 'test')`);
-//     }
-// });
+db.get('SELECT email FROM users WHERE email = "admin@test.com"', (err) => {
+    if (err) {
+        db.run(`INSERT INTO users (account_type, first_name, last_name, email, password)
+            VALUES('admin', 'admin', 'test', 'admin@test.com', 'test')`);
+    }
+});
+db.get('SELECT email FROM users WHERE email = "office@test.com"', (err) => {
+    if (err) {
+        db.run(`INSERT INTO users (account_type, first_name, last_name, email, password)
+            VALUES('office', 'office', 'test', 'office@test.com', 'test')`);
+    }
+});
+db.get('SELECT email FROM users WHERE email = "patient@test.com"', (err) => {
+    if (err) {
+    db.run(`INSERT INTO users (account_type, first_name, last_name, email, password)
+        VALUES('patient', 'patient', 'test', 'patient@test.com', 'test')`);
+    }
+});
 
-// db.get('SELECT email FROM users WHERE email = "office@test.com"', (err) => {
-//     if (err) {
-//         db.run(`INSERT INTO users (account_type, first_name, last_name, email, password)
-//             VALUES('office', 'office', 'test', 'office@test.com', 'test')`);
-//     }
-// });
-
-// db.get('SELECT email FROM users WHERE email = "patient@test.com"', (err) => {
-//     if (err) {
-        
-//     db.run(`INSERT INTO users (account_type, first_name, last_name, email, password)
-//         VALUES('patient', 'patient', 'test', 'patient@test.com', 'test')`);
-//     }
-// });
 // Function to add user with optional profile picture
 const addUser = (at, fn, ln, em, ps, profilePicturePath = null) => {
     const query = `INSERT INTO users (account_type, first_name, last_name, email, password, profile_picture)
