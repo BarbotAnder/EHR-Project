@@ -1,6 +1,6 @@
 # Capstone Template
 
-[![Node.js CI](https://github.com/cs481-ekh/f24-duff-design-co/actions/workflows/node.js.yml/badge.svg)](https://github.com/cs481-ekh/f24-duff-design-co/actions/workflows/node.js.yml)
+[![Node.js CI](https://github.com/BarbotAnder/EHR-Project/actions/workflows/node.js.yml/badge.svg)](https://github.com/BarbotAnder/EHR-Project/actions/workflows/node.js.yml)
 
 **Boise State University CS481 Capstone Project**
 
