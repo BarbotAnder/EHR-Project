@@ -1,0 +1,71 @@
+.container-fluid {
+    display: 'flex'; 
+    height: 100vh;
+}
+
+.main-content {
+    flex-grow: 1;
+    position: 'relative';
+    margin-top: 10px;
+    padding: 20px; 
+}
+
+#errMessage {
+    color: 'red'
+}
+
+.collection {
+    list-style: none;
+    padding: 0;
+}
+
+.collection-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.collection-item strong {
+    margin-right: 10px;
+}
+
+input {
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    flex: 1;
+}
+
+#account_type {
+    display: inline;
+    float: left;
+    width: 100%;
+}
+
+.btn {
+    margin-right: 10px; /* Space between buttons */
+}
+
+#edit-buttons {
+    margin-top: 20px;
+}
+
+#user-details-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul.collection {
+    width: 80%;
+    text-align: left;
+}
+
+h4 {
+    font-size: 1.54rem;
+    margin-bottom: 20px;
+    text-align: center;
+}

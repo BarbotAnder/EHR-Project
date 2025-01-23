@@ -1,0 +1,96 @@
+/* Styling for the buttons in the Dashboard */
+.dashboard-buttons {
+  display: flex;
+  justify-content: center; /* Center-align the buttons */
+  gap: 20px; /* Add space between buttons */
+  flex-wrap: wrap; /* Allow buttons to wrap to the next line if necessary */
+  margin-top: 20px;
+}
+
+.dashboard-btn {
+  height: 60px;
+  width: 250px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-btn:hover {
+  background-color: #0056b3;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Specific styling for New Patient button */
+.new-patient-btn, .patient-page-btn {
+  background-color: #fba91e;
+}
+
+.new-patient-btn:hover, .patient-page-btn:hover {
+  background-color: #f39c12;
+}
+
+/* Specific styling for Search Patient button */
+.search-patient-btn {
+  background-color: #28a745;
+}
+
+.search-patient-btn:hover {
+  background-color: #218838;
+}
+
+/* Specific styling for Appointments button */
+.appointments-btn {
+  background-color: #17a2b8;
+}
+
+.appointments-btn:hover {
+  background-color: #138496;
+}
+
+/* Specific styling for Medical Records button */
+.medical-records-btn {
+  background-color: #6c757d;
+}
+
+.medical-records-btn:hover {
+  background-color: #5a6268;
+}
+
+/* Specific styling for Billing button */
+.billing-btn {
+  background-color: #ffc107;
+  color: #333;
+}
+
+.billing-btn:hover {
+  background-color: #e0a800;
+}
+
+/* Specific styling for Reports button */
+.reports-btn {
+  background-color: #fd7e14;
+}
+
+.reports-btn:hover {
+  background-color: #e05c0d;
+}
+
+/* Active nav-item styling */
+.nav-item.active {
+  background-color: #1e3b4e; /* Change to the color you want for the active state */
+  color: #ffcc00; /* Adjust the text color of the active link */
+}
+
+#errMessage {
+  color: #ff0000;
+}
+
+.access-denied {
+  text-align: center;
+  color: #ff0000;
+}
